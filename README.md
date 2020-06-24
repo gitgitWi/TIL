@@ -3,13 +3,13 @@
 ## ML/DL
 
 - [T-academy 딥러닝 입문에서 활용까지 케라스(Keras)](https://github.com/gitgitWi/Lecture-Notes/tree/master/MLDL/Keras_by_KTY)
-- [T-academy 코드로 알아보는 딥러닝 입문]()
-- [PyTorch로 시작하는 딥 러닝 입문]()
+- [T-academy 코드로 알아보는 딥러닝 입문](https://github.com/gitgitWi/Lecture-Notes/blob/master/MLDL/20200503_DLwithCodes.md)
+- [PyTorch로 시작하는 딥 러닝 입문](https://github.com/gitgitWi/Lecture-Notes/tree/master/MLDL/DL_with_PyTorch)
 
 ### NLP
 
 - [고려대 DSBA 대학원 <Text Analytics (2020-1)>](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/KorUniv-DSBA)
-- [김기현의 자연어 처리 딥러닝 캠프(파이토치 편)]()
+- [김기현의 자연어 처리 딥러닝 캠프(파이토치 편)](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/NLP_with_PyTorch(2020))
 
 ### Data Analytics
 
