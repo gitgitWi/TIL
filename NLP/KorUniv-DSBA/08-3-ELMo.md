@@ -5,8 +5,7 @@
 - 강의자료 : 
 
 - 이미지
-	- http://jalammar.github.io/illustrated-transformer/
-	- http://jalammar.github.io/illustrated-gpt2/
+	- http://jalammar.github.io/illustrated-bert/
 
 - mkdate : 2020-06-24
 
