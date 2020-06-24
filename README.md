@@ -8,7 +8,7 @@
 
 ### NLP
 
-- [고려대 DSBA 대학원 <Text Analytics (2020-1)>](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/KorUniv-DSBA)
+- [고려대 DSBA 대학원 Text Analytics (2020-1)](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/KorUniv-DSBA)
 - [김기현의 자연어 처리 딥러닝 캠프(파이토치 편)](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/NLP_with_PyTorch(2020))
 
 ### Data Analytics
@@ -33,3 +33,17 @@
 ### Go
 
 - [Tucker 컴맹을 위한 프로그래밍 기초 강좌](https://github.com/gitgitWi/Lecture-Notes/blob/master/Go/Tucker/LectureNotes.md)
+
+
+---
+
+## 참고자료
+
+### WikiDocs
+
+- [딥 러닝을 이용한 자연어 처리 입문](https://wikidocs.net/book/2155)
+
+### BLOGs
+
+- https://nlpinkorean.github.io/
+- https://reniew.github.io/contents/categories/
