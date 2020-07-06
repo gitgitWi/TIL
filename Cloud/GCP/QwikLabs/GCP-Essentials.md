@@ -106,10 +106,12 @@ $ gcloud compute ssh gcelab2 --zone us-central1-c
 default region, zone 설정, 확인
 
 ```bash
-$ google-compute-default-region
-$ google-compute-default-zone
+google-compute-default-region
+google-compute-default-zone
 
 $ gcloud compute project-info describe --project <Your-Project-ID>
+
+$ gcloud config set compute/zone us-central1-a
 ```
 
 ### Cloud SDK 초기화
@@ -194,34 +196,104 @@ $ cd $HOME
 
 ## GSP100: Kubernetes Engine: Qwik Start
 
+### Kubernetes Engine
+
+- Google 서비스와 동일한 설계 원칙
+- 자동관리, App. Container의 모니터링/활성 여부조사, 자동확장, 순차적 update 등
+
+GCP의 Kubernetes
+
+- 일반 Kubernetes의 특징 외에도
+- Compute Engine 인스턴스를 위한 부하 분산
+- node-pool로 cluster 안에 하위 node 집합 지정하여 유연성 강화
+- cluster에서 node instances 개수의 자동 확장
+- cluster에서 node software의 자동 upgrade
+- node 자동 복구로 node 상태 및 가용성 유지 관리
+- Stackdriver를 통한 logging 및 monitoring으로 cluster 현황에 대한 가시성 확보
+
+### Kubernetes Engine cluster 만들기
+
+Cluster : 1개 이상의 cluster master machine과 node라는 다수의 작업자 VM instances로 구성
+
+- cluster 생성 ; 40자 이내, 영문자로 시작, 영/숫자로 끝
+- 몇 분 걸림..
 
 ```bash
+$ gcloud container clusters create [CLUSTER-NAME]
 
+$ gcloud container clusters create my-cluster
+
+NAME          LOCATION       MASTER_VERSION  MASTER_IP      MACHINE_TYPE   NODE_VERSION    NUM_NODES  STATUS
+my-container  us-central1-a  1.14.10-gke.36  35.188.157.57  n1-standard-1  1.14.10-gke.36  3          RUNNING
 ```
 
+### Cluster 사용자 인증 정보 얻기
+
+cluster 사용하기 위해 사용자 인증 정보 얻어야 함
 
 ```bash
+$ gcloud container clusters get-credentials [CLUSTER-NAME]
 
+$ gcloud container clusters get-credentials my-cluster
+
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for my-container.
 ```
+	
+### Cluster에 application 배포
 
+Kubernetes Engine에서는 Kubernetes 객체를 사용해 cluster의 resource 생성 및 관리
+
+- 배포 객체 : web server 등 비추적 application 배포하는 경우
+- 서비스 객체 : internet에서 application에 access하기 위한 규칙과 부하 분산 정의
+
+`hello-app` container image를 통해 배포 서버 `hello-server` 생성
+
+	```bash
+	$ kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
+
+	deployment.apps/hello-server created
+	```
+
+Kubernetes 서비스 생성
+
+- LoadBalancer : compute engine 부하 분산기
 
 ```bash
+$ kubectl expose deployment hello-server --type=LoadBalancer --port 8080
 
+service/hello-server exposed
 ```
+
+서비스 검사
 
 ```bash
+$ kubectl get service
 
+NAME           TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+hello-server   LoadBalancer   10.15.244.164   34.68.108.136   8080:31002/TCP   62s
+kubernetes     ClusterIP      10.15.240.1     <none>          443/TCP          13m
 ```
 
+`http://EXTERNEL-IP:8080` 접속시 아래와 같은 화면 출력
+
+![image](https://user-images.githubusercontent.com/57997672/86594738-8003ee00-bfd2-11ea-9f87-9d4f276f3ffe.png)
+
+삭제
 
 ```bash
+$ gcloud container clusters delete [CLUSTER-NAME]
 
+$ gcloud container clusters delete my-cluster
+
+The following clusters will be deleted.
+ - [my-container] in [us-central1-a]
 ```
 
+`hello-server` 가 아닌 container cluster 를 지우는 것
 
-```bash
 
-```
+---
 
 
 ```bash
