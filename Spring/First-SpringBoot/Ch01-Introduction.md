@@ -3,7 +3,6 @@
 Class: Spring
 ClassName: 처음배우는스프링부트2
 Created: Jul 12, 2020 6:29 PM
-Reviewed: No
 
 # 처음 배우는 스프링 부트 2
 
