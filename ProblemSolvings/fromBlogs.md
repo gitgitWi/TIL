@@ -273,177 +273,98 @@
 1시간 이내 풀 것
 
 - http://boj.kr/1463
- 
-- http://boj.kr/11726
- 
-- http://boj.kr/11727
- 
-- http://boj.kr/9095
- 
-- http://boj.kr/10844
- 
-- http://boj.kr/11057
- 
-- http://boj.kr/2193
- 
+- http://boj.kr/11726 
+- http://boj.kr/11727 
+- http://boj.kr/9095 
+- http://boj.kr/10844 
+- http://boj.kr/11057 
+- http://boj.kr/2193 
 - http://boj.kr/9465
- 
 - http://boj.kr/2156
- 
 - http://boj.kr/11053
- 
 - http://boj.kr/11055
- 
 - http://boj.kr/11722
- 
 - http://boj.kr/11054
- 
 - http://boj.kr/1912
- 
 - http://boj.kr/2579
- 
 - http://boj.kr/1699
- 
 - http://boj.kr/2133
- 
 - http://boj.kr/9461
- 
 - http://boj.kr/2225
- 
 - http://boj.kr/2011
- 
 - http://boj.kr/11052
 
 ## 기초2
 
 - http://boj.kr/2751
-
 - http://boj.kr/11650
- 
 - http://boj.kr/11651
- 
 - http://boj.kr/10814
- 
 - http://boj.kr/10825
- 
 - http://boj.kr/10989
- 
 - http://boj.kr/11652
- 
 - http://boj.kr/11004
- 
 - http://boj.kr/10828
- 
 - http://boj.kr/9012
- 
 - http://boj.kr/10799
- 
 - http://boj.kr/10845
- 
 - http://boj.kr/10866
- 
 - http://boj.kr/10808
- 
 - http://boj.kr/10809
- 
 - http://boj.kr/10820
- 
 - http://boj.kr/2743
- 
 - http://boj.kr/11655
- 
 - http://boj.kr/10824
- 
 - http://boj.kr/11656
- 
 - http://boj.kr/1406
- 
 - http://boj.kr/1158
- 
 - http://boj.kr/1168
- 
 - http://boj.kr/10430
- 
 - http://boj.kr/2609
- 
 - http://boj.kr/1934
- 
 - http://boj.kr/1850
- 
 - http://boj.kr/9613
- 
 - http://boj.kr/11005
- 
 - http://boj.kr/2745
- 
 - http://boj.kr/1373
- 
 - http://boj.kr/1212
- 
 - http://boj.kr/2089
- 
 - http://boj.kr/11576
- 
 - http://boj.kr/1978
- 
 - http://boj.kr/1929
- 
 - http://boj.kr/6588
- 
 - http://boj.kr/11653
- 
 - http://boj.kr/10872
- 
 - http://boj.kr/1676
- 
 - http://boj.kr/2004
 
 
 ## 그래프 (BFS / DFS)
 
 - http://boj.kr/1260
- 
 - http://boj.kr/11724
- 
 - http://boj.kr/1707
- 
 - http://boj.kr/10451
- 
 - http://boj.kr/2331
- 
 - http://boj.kr/9466
- 
 - http://boj.kr/2667
- 
 - http://boj.kr/4963
- 
 - http://boj.kr/7576
- 
 - http://boj.kr/2178
- 
 - http://boj.kr/2146
- 
 - http://boj.kr/1991
- 
 - http://boj.kr/11725
- 
 - http://boj.kr/1167
- 
 - http://boj.kr/1967
 
 
 ## 이분탐색/삼분탐색
 
 - http://boj.kr/1654
- 
 - http://boj.kr/2805
- 
 - http://boj.kr/2110
- 
 - http://boj.kr/10815
- 
 - http://boj.kr/10816
- 
 - http://boj.kr/11662
 
 
