@@ -86,4 +86,6 @@ $ sudo service mysql start
 
 $ mysql -u root -p
 
+$ mysql -u [USERNAME] -p -h [URL]
+
 ```
