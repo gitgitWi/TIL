@@ -24,6 +24,11 @@
 
 ### Spring / Spring Boot
 
+#### [스프링 부트와 AWS로 혼자 구현하는 웹 서비스](https://github.com/gitgitWi/Lecture-Notes/tree/44203bedfe8a69a95470eaaad82fedf34f100796/Spring/SpringBoot-AWS)
+
+- 2020-06-30 ~ 2020-07-13 [1회독]
+- https://github.com/gitgitWi/book-aws
+
 #### [겟인데어 Spring Boot](https://github.com/gitgitWi/Lecture-Notes/tree/master/Spring/Get-in-There)
 
 #### [T-academy 스프링 부트를 이용한 웹 서비스 개발](https://github.com/gitgitWi/Lecture-Notes/tree/master/Spring/Tacademy-Spring-Boot-Web-Service)
@@ -48,7 +53,7 @@
 
 #### [QwikLabs](https://github.com/gitgitWi/Lecture-Notes/tree/master/Cloud/GCP/QwikLabs)
 
-- since 2020-07-06
+- 2020-07-06 ~
 - Google Cloud Certified Korea 스터디잼 참여
 
 <br />
