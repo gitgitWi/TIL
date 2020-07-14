@@ -1,15 +1,15 @@
 spring:
     profiles:
-    active: local
+        active: local
     mvc:
-    view:
-        prefix: /WEB-INF/jsp/ 
-        suffix: .jsp
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
     datasource:
-    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/a5?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC # DB명 치환
-    username: root # DB아이디 치환
-    password:
+        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+        url: jdbc:log4jdbc:mariadb://springboot-0709.cgcwwzekltsf.ap-northeast-2.rds.amazonaws.com:3306/JHS?autoReconnect=true&useUnicode=true&characterEncoding=utf8&serverTimezone=UTC # DB명 치환
+        username: gitgitwi
+        password: cjswo153
 
 mybatis:
-  type-aliases-package: io.jhs.lecture.dto # dto의 풀 패키지 명 입력
+    type-aliases-package: io.jhs.lecture.dto # dto의 풀 패키지 명 입력

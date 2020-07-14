@@ -2,34 +2,11 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>CUNI - 게시물 리스트</title>
-<style>
-.con {
-	width: 1000px;
-	margin: 0 auto;
-}
-.article-list-box>table {
-	width: 100%;
-	border-collapse: collapse;;
-}
-.article-list-box>table th, .article-list-box>table td {
-	border: 1px solid black;
-	padding: 20px;
-}
-</style>
-</head>
-<body>
-	<h1>게시물 리스트</h1>
+<c:set var="pageTitle" value="게시물 리스트" />
 
-	<div class="con menu-box">
-		<a href="/article/list">글 리스트</a> <a href="/article/write">글쓰기</a>
-	</div>
+<%@ include file="../part/head.jsp" %>
 
-	<div class="con article-list-box">
+<div class="con article-list table-box">
 		<table>
 			<colgroup>
 				<col width="10" />
@@ -59,6 +36,6 @@
 				</c:forEach>
 			</tbody>
 		</table>
-	</div>
-</body>
-</html>
+</div>
+	
+<%@ include file="../part/foot.jspf" %>
