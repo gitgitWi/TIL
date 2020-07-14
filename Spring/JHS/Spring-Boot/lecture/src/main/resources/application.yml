@@ -13,3 +13,9 @@ spring:
 
 mybatis:
     type-aliases-package: io.jhs.lecture.dto # dto의 풀 패키지 명 입력
+
+custom:
+    logoText: CUNI
+    uploadDir: 
+    emailSender: no-reply@noreply.io
+    emailSenderName: CUNI Master

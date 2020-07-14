@@ -17,15 +17,15 @@ import io.jhs.lecture.service.ArticleService;
 
 @Controller
 public class ArticleController {
-    
+	
     @Autowired
     private ArticleService articleService;
 
     @RequestMapping("/article/list")
     public String showList(Model model) {
-        List<Article> articles = articleService.getArticles();
-
-        model.addAttribute("articles", articles);
+		List<Article> articles = articleService.getArticles();
+		
+		model.addAttribute("articles", articles);
 
         return "article/list";
     }
