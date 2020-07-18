@@ -35,7 +35,7 @@
 
 ### JavaScript
 
-#### [Nomad Coder 초보자를 위한 JavaScript (VanillaJS로 Momentum 클론 코딩)] (https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone)
+#### [Nomad Coder 초보자를 위한 JavaScript (VanillaJS로 Momentum 클론 코딩)](https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone)
 
 - 2020-07-18
 - https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone/examples/lec03-clone
