@@ -33,9 +33,21 @@
 
 #### [T-academy 스프링 부트를 이용한 웹 서비스 개발](https://github.com/gitgitWi/Lecture-Notes/tree/master/Spring/Tacademy-Spring-Boot-Web-Service)
 
+### JavaScript
+
+#### [Nomad Coder 초보자를 위한 JavaScript (VanillaJS로 Momentum 클론 코딩)] (https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone)
+
+- 2020-07-18
+- https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone/examples/lec03-clone
+
+#### [Nomad Coder 초보자를 위한 JavaScript2 (VanillaJS로 그림판 만들기)](https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/PaintGame)
+
+- 2020-07-18
+- https://github.com/gitgitWi/NicolasPainter/
+
 ### Django / Flask
 
-#### [AWS 클라우드 기반의 Django 웹 애플리케이션]()
+<!-- #### [AWS 클라우드 기반의 Django 웹 애플리케이션]() -->
 
 <br />
 
