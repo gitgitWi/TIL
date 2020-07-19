@@ -2,15 +2,15 @@
 
 ## ML/DL
 
-#### [T-academy 딥러닝 입문에서 활용까지 케라스(Keras)](https://github.com/gitgitWi/Lecture-Notes/tree/master/MLDL/Keras_by_KTY)
+#### [T-academy / 딥러닝 입문에서 활용까지 케라스(Keras)](https://github.com/gitgitWi/Lecture-Notes/tree/master/MLDL/Keras_by_KTY)
 
-#### [T-academy 코드로 알아보는 딥러닝 입문](https://github.com/gitgitWi/Lecture-Notes/blob/master/MLDL/20200503_DLwithCodes.md)
+#### [T-academy / 코드로 알아보는 딥러닝 입문](https://github.com/gitgitWi/Lecture-Notes/blob/master/MLDL/20200503_DLwithCodes.md)
 
 #### [PyTorch로 시작하는 딥 러닝 입문](https://github.com/gitgitWi/Lecture-Notes/tree/master/MLDL/DL_with_PyTorch)
 
 ### NLP
 
-#### [고려대 DSBA 대학원 Text Analytics (2020-1)](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/KorUniv-DSBA)
+#### [고려대 DSBA 대학원 / Text Analytics (2020-1)](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/KorUniv-DSBA)
 
 #### [김기현의 자연어 처리 딥러닝 캠프(파이토치 편)](https://github.com/gitgitWi/Lecture-Notes/tree/master/NLP/NLP_with_PyTorch(2020))
 
@@ -29,21 +29,34 @@
 - 2020-06-30 ~ 2020-07-13 [1회독]
 - https://github.com/gitgitWi/book-aws
 
-#### [겟인데어 Spring Boot](https://github.com/gitgitWi/Lecture-Notes/tree/master/Spring/Get-in-There)
+#### [겟인데어 / Spring Boot](https://github.com/gitgitWi/Lecture-Notes/tree/master/Spring/Get-in-There)
 
-#### [T-academy 스프링 부트를 이용한 웹 서비스 개발](https://github.com/gitgitWi/Lecture-Notes/tree/master/Spring/Tacademy-Spring-Boot-Web-Service)
+개념
+
+- 2020-06-21 ~ 2020-07-19
+
+실습 [블로그 만들기]
+
+- 2020-07-19 ~ 
+
+#### [T-academy / 스프링 부트를 이용한 웹 서비스 개발](https://github.com/gitgitWi/Lecture-Notes/tree/master/Spring/Tacademy-Spring-Boot-Web-Service)
 
 ### JavaScript
 
-#### [Nomad Coder 초보자를 위한 JavaScript (VanillaJS로 Momentum 클론 코딩)](https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone)
+#### [Nomad Coder / 초보자를 위한 JavaScript (VanillaJS로 Momentum 클론 코딩)](https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone)
 
 - 2020-07-18
 - https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/MomentumClone/examples/lec03-clone
 
-#### [Nomad Coder 초보자를 위한 JavaScript2 (VanillaJS로 그림판 만들기)](https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/PaintGame)
+#### [Nomad Coder / 초보자를 위한 JavaScript2 (VanillaJS로 그림판 만들기)](https://github.com/gitgitWi/Lecture-Notes/tree/master/JavaScript/VanillaJS/NomadCoderNicolas/PaintGame)
 
 - 2020-07-18
 - https://github.com/gitgitWi/NicolasPainter/
+
+#### [따라하며 배우는 노드, 리액트 시리즈 - 기본강의]()
+
+- 2020-07-18 ~ 
+- #
 
 ### Django / Flask
 
