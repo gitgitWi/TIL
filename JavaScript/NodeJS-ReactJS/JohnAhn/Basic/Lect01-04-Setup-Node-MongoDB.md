@@ -263,9 +263,3 @@ module.exports = { User }
 ```
 
 <br />
-
----
-
-## 05, 06. Git
-
----
