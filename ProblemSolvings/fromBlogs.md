@@ -9,8 +9,8 @@
 ## 알고리즘 초급
 
 - 완전 탐색 : https://blog.naver.com/kks227/220769870195
-	- http://boj.kr/2309: 일곱 난쟁이
-	- http://boj.kr/2231: 분해합
+	- [x] http://boj.kr/2309: 일곱 난쟁이
+	- [x] http://boj.kr/2231: 분해합
 	- http://boj.kr/3085: 사탕 게임
 	- http://boj.kr/10448: 유레카 이론
 	- http://boj.kr/2503: 숫자 야구
