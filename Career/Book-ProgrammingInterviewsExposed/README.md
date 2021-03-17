@@ -28,4 +28,4 @@
 - CHAPTER 17 그림 및 공간 퍼즐
 - CHAPTER 18 지식 기반 문제
 - CHAPTER 19 기술과 무관한 질문
-- [APPENDIX A 이력서](.\appendix-resume.md)
+- [APPENDIX A 이력서](./appendix-resume.md)
