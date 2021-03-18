@@ -10,7 +10,7 @@
 ## 목차
 
 - CHAPTER 1 구직을 시작하기 전에
-- CHAPTER 2 입사 지원 절차
+- [CHAPTER 2 입사 지원 절차](./02-입사지원절차.md)
 - CHAPTER 3 전화 예비 면접
 - CHAPTER 4 프로그래밍 문제 접근법
 - CHAPTER 5 연결 리스트
