@@ -10,8 +10,8 @@
 ## 목차
 
 - CHAPTER 1 구직을 시작하기 전에
-- [CHAPTER 2 입사 지원 절차](./02-입사지원절차.md)
-- CHAPTER 3 전화 예비 면접
+- [CHAPTER 2 입사 지원 절차](./02.입사지원절차.md)
+- [CHAPTER 3 전화 예비 면접](./03.전화예비면접.md)
 - CHAPTER 4 프로그래밍 문제 접근법
 - CHAPTER 5 연결 리스트
 - CHAPTER 6 트리와 그래프
@@ -26,6 +26,6 @@
 - CHAPTER 15 데이터 과학, 난수, 그리고 통계학
 - CHAPTER 16 카운팅, 측정 및 순서 관련 퍼즐
 - CHAPTER 17 그림 및 공간 퍼즐
-- CHAPTER 18 지식 기반 문제
+- [CHAPTER 18 지식 기반 문제](./18.지식기반문제.md)
 - CHAPTER 19 기술과 무관한 질문
-- [APPENDIX A 이력서](./appendix-resume.md)
+- [APPENDIX A 이력서](./appendix.resume.md)
