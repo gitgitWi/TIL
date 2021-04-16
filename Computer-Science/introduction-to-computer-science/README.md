@@ -10,7 +10,7 @@
 - 4주차
 - [5주차. 프로그래밍 언어](./5.ProgrammingLanguage.md)
 - [6주차. 데이터베이스](./6.Database.md)
-- 7주차
+- [7주차. 컴퓨터 통신](./7.ComputerNetwork.md)
 - 9주차
 - 10주차
 - 11주차
