@@ -4,7 +4,7 @@
 
 ---
 
-## 식별자; MAC, IP, Port
+## MAC주소, IP주소, Port번호가 식별하는 것
 
 - L4 전송 계층
 
@@ -24,7 +24,7 @@
 
 ---
 
-## Host, Switch, Network
+## Host, Switch, Network 이들의 관계에 대해...
 
 ### Host
 
@@ -54,7 +54,7 @@
 
 ---
 
-### IPv4 주소체계와 (Sub)Net Mask
+## IPv4주소 체계에 대한 암기사항
 
 ### IP
 
@@ -80,3 +80,67 @@
 - Socket에 attach 되는 정보 중 하나가 Port 번호
 - 기본적으로 `16bit-2`개; 0 ~ 65535, 0번과 65535번은 사용하지 않음
 - 네트워크 Packet이 들어와서 어떤 프로그램으로 갈지는 Port 번호가 결정!
+
+---
+
+## Switch가 하는 일은 Switching 이다
+
+## 네트워크 데이터 단위 정리 (매우 중요!)
+
+## 네트워크 인터페이스 선택 원리와 기준
+
+## 웹 서비스를 만드신 분에 대하여...
+
+## 초창기 웹 서비스 구조
+
+## 웹 서비스 3대 요소
+
+## WAS, JVM 그리고 RESTful API
+
+## LAN과 WAN을 구별하는 방법
+
+## 패킷의 생성 원리와 캡슐화
+
+## L2 스위치에 대해서
+
+## IP헤더 형식과 의미 요약
+
+## Wireshark의 내부구조와 작동원리
+
+## Router의 내부 구조와 Inline
+
+## Inline 구조와 Out of path 구조
+
+## Proxy의 구조와 작동원리
+
+## Proxy의 활용 첫 번째. '우회'
+
+## Proxy의 활용 두 번째, 분석
+
+## Proxy의 활용 세 번째, 감시와 보호
+
+## Proxy의 활용 네 번째, Reverse Proxy
+
+## 이해하면 인생이 바뀌는 TCP 송/수신 원리
+
+## TCP 연결이라는 착각에 대해
+
+## TCP 연결, LAN선 뽑기 그리고 게임해킹!
+
+## Unicast, Broadcast, Multicast
+
+## IP주소의 종류와 특징
+
+## 전세계 인터넷을 멈추는 방법과 DNS
+
+## TCP/IP통신과 MAC주소의 변화
+
+## L2 스위치와 ARP 작동원리
+
+## 길 잃은 Packet의 소멸과 TTL
+
+## MTU와 Packet 단편화
+
+## 가래떡과 Stream
+
+## 퇴근시간을 결정하는 TCP 장애유형 5가지
