@@ -97,11 +97,77 @@
 
 ## [WAS, JVM 그리고 RESTful API](https://www.youtube.com/watch?v=poKkQHUBt9A&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=12)
 
+WAS; Web Application Server
+
+- 비즈니스 로직 처리
+- MVC
+  - View: 정적 데이터 처리
+  - Model: DB 작업
+  - Control: URI 처리
+- WAS의 언어
+  - Java의 JVM; CPU에 독립적이기 위해 CPU를 VM으로 구현
+  - Middleware: 단독으로는 프로그램으로서 의미가 없고, H/W - S/W 사이에서 S/W가 잘 작동할 수 있도록 도와주는 역할
+  - WAS는 Middleware 중 하나
+
+3-Tier Web Solution
+
+- Web Server (Frontend Server) 1 tier
+- WAS 1 tier
+- DB 1 tier
+- 서버단 성능 이슈는 주로 WAS, DB 둘 중에서 발생
+- APM; 성능 모니터링 툴, Scouter 등
+
+클라이언트에서의 성능 이슈는 주로 HTTP 응답 속도
+
+- HTML 요청/응답 -> JSON 요청/응답
+- 데이터로 CRUD만 => RESTful API
+
 ## [LAN과 WAN을 구별하는 방법](https://www.youtube.com/watch?v=N8pE-vDsJ38&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=13)
+
+Local - Wide Area Network의 구분 (강의자의 뇌피셜이 어느정도 들어간..)
+
+- Internet (IP, 3계층)은 Virtual(=> Logical) Network => IP주소가 중요
+- Physical 계층에서 구분되면 LAN => MAC주소가 중요
+  - Broadcast 주소도 LAN
 
 ## [패킷의 생성 원리와 캡슐화](https://www.youtube.com/watch?v=Bz-K-DPfioE&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=14)
 
+- Socket 수준에서 데이터: Stream
+- Stream 데이터가 TCP 로 오면 일정 크기로 잘려서 Segment
+- Segment가 encapsulation 되면 Packet
+- H/W 계층에서 Packet이 encapsulation 되면 Frame
+
+Packet의 구조
+
+- 택배박스
+- 일반적으로 총 1500byte
+- Header (택배 송장)
+  - IP; 20byte
+  - TCP; 20byte
+- Payload (택배 내용물)
+  - 1460byte
+
+DPI
+
+- Deep Packet Inspection
+- 보안 등 이유로 패킷 내부를 검사
+
+Frame
+
+- 택배 박스를 싣는 트럭
+
 ## [L2 스위치에 대해서](https://www.youtube.com/watch?v=y8rPmcYRsrk&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=15)
+
+- MAC 주소로 스위칭, 48bit
+- `ipconfig/all` 했을 때 물리적 주소로 뜨는 것
+- 기본적으로 전세계에서 단 하나
+
+![https://user-images.githubusercontent.com/57997672/163890477-e87816ff-dbda-4cac-82ea-ca8e048c7e7f.png](https://user-images.githubusercontent.com/57997672/163890477-e87816ff-dbda-4cac-82ea-ca8e048c7e7f.png)
+
+PC(NIC)[] ⇒ L2 Access[] ⇒ L2 Distribution[] ⇒ Router[] ⇒ Internet
+
+- PC는 Endpoint
+- 왼쪽에서 오른쪽으로 가면 Up Link; 상위 계층 스위치에 연결
 
 ## [IP헤더 형식과 의미 요약](https://www.youtube.com/watch?v=9MPzEwZrRqo&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=16&t=27s)
 
