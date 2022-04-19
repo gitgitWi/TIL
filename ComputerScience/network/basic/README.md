@@ -132,6 +132,8 @@ Local - Wide Area Network의 구분 (강의자의 뇌피셜이 어느정도 들�
 
 ## [패킷의 생성 원리와 캡슐화](https://www.youtube.com/watch?v=Bz-K-DPfioE&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=14)
 
+![https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/OSI_Model_v1.svg/1280px-OSI_Model_v1.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/OSI_Model_v1.svg/1280px-OSI_Model_v1.svg.png)
+
 - Socket 수준에서 데이터: Stream
 - Stream 데이터가 TCP 로 오면 일정 크기로 잘려서 Segment
 - Segment가 encapsulation 되면 Packet
@@ -171,11 +173,70 @@ PC(NIC)[] ⇒ L2 Access[] ⇒ L2 Distribution[] ⇒ Router[] ⇒ Internet
 
 ## [IP헤더 형식과 의미 요약](https://www.youtube.com/watch?v=9MPzEwZrRqo&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=16&t=27s)
 
-## [Wireshark의 내부구조와 작동원리](https://www.youtube.com/watch?v=5Dku-vX3w-c&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=17)
+![https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPv4_Packet-en.svg/1920px-IPv4_Packet-en.svg.png](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPv4_Packet-en.svg/1920px-IPv4_Packet-en.svg.png)
+
+IP header
+
+- version: IPv4, IPv6
+- IHL (IP Header Length)
+- TOS (Type of Service)
+- Identification; 단편화
+- TTL (Time to Live); Packet 유통 과정에서 Router 지날때마다 1씩 줄어듦, 2^8bit, 모두 없어지면 Router가 버림
+
+IP payload (data)
+
+- 65,536(2^36) byte, 64kb까지는 가능하지만, 대부분의 MTU는 여전히 1,500 byte
+
+## [WireShark의 내부구조와 작동원리](https://www.youtube.com/watch?v=5Dku-vX3w-c&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=17)
+
+네트워크를 하려면 WireShark은 필수
+
+kernel 모드 내 IP - Driver 사이에는 **Filter/Sensor**가 있음
+
+- bypass
+- drop
+- Sensor는 항상 bypass 시키면서 수집만 함; 윈도우용 프로그램 `Npcap`
+- WireShark는 Sensor 데이터를 수집해서 디코딩하는 프로그램
+  - 도/감청은 위법한 수집, 윤리의식이 중요
 
 ## [Router의 내부 구조와 Inline](https://www.youtube.com/watch?v=kZia_C-YY2o&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=18)
 
+Router는 L3 스위칭을 하는 Inline 구조 장치
+
+- Inline
+  - Packet 단위로 Bypass or Drop 시키는 장치
+
+Router에도 Host IP 주소 부여
+
+- OS가 있는 컴퓨터
+- 네트워크 인터페이스가 2개 == NIC가 2개
+  - 내부로 들어오는 네트워크, 외부로 나가는 네트워크
+- 컴퓨터이기 때문에 들어오는 NIC -> IP -> TCP -> Process -> TCP -> IP -> 나가는 NIC를 거치는데, 이 과정에서 많은 리소스 소요
+- 들어오는 NIC -> 나가는 NIC 로 하드웨어 수준에서 바로 처리되면, 하드웨어 가속이라고 함
+- NIC가 3개 이상인 경우; 들어오는 NIC 1개, 나가는 NIC 2개 이상
+  - L3(IP) 수준에서 어떤 인터페이스로 나갈지를 선택해줘야 함
+  - 들어올 때 Read, 나가는 인터페이스 선택할 때 Write
+  - Read는 하지만 Write를 하지 않는 경우 => Drop
+  - 단순히 routing만 하면 **Router**
+  - 보안 등 이유를 가지고 filtering을 하면 **방화벽**
+  - Router와 Packet Filtering 방화벽 기본 구조는 거의 동일하다
+
 ## [Inline 구조와 Out of path 구조](https://www.youtube.com/watch?v=XBPXxFip4xs&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=19)
+
+Out of path는 Inline과 반대되는 방식
+
+- 네트워크 device는 주로 inline
+  - 패킷을 단순히 통과시키는 구조
+
+Port Mirroring
+
+- L2 스위치 등에서 통과하는 모든 데이터를 read-only 데이터로 복사(원본-사본 동일)
+  - => **out-of-path**; sensor 역할
+  - 장애/이상징후/침입 탐지 등
+- port를 기준으로
+- 리소스를 많이 잡아먹는 작업; CPU 사용률이 크게 증가하므로 일반적인 네트워크에서는 잘 사용하지 않음
+- 비슷하게 Tab switch가 있음
+  - 1개의 packet만 지나가도 연결된 모든 인터페이스에 복사해서 넘겨줌
 
 ## [Proxy의 구조와 작동원리](https://www.youtube.com/watch?v=dThqHi8-MiQ&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=20)
 
