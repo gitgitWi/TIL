@@ -250,6 +250,35 @@ Port Mirroring
 
 ## [이해하면 인생이 바뀌는 TCP 송/수신 원리](https://www.youtube.com/watch?v=K9L9YZhEjC0&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=25)
 
+Client - Server 통신하는 경우
+
+- 서버단
+
+  - Web Server (Process) - Socket (File)
+
+    - 서버가 할 수 있는 작업: RWX; Receive - Send
+    - File I/O 과정: HDD/SSd <-> Driver <-> File System <-> Memory
+    - 이때 파일 크기가 1.5mb라면, 메모리에 1.5mb를 모두 할당하는 것이 아니고, 특정 단위로 잘라서 가져옴
+    - 메모리에 적재되는 데이터들은 Buffer
+
+  - 특정 프로세스 File I/O Buffer가 다른 프로세스 File I/O Buffer로 넘어가는 것 => Buffered I/O
+  - Socket도 파일이므로 마찬가지 과정 발생, TCP에서 Buffer를 갖고 있다가 데이터를 IP로 넘어가면 Segment로 나뉨
+  - Segment를 packet으로 encapsulation해서 frame에 담아 전송
+
+    - frame은 택배가 택배차를 여러번 갈아타듯이 갈아타면서 전달됨
+
+- 클라이언트단
+
+  - NIC -> Driver -> IP -> TCP -> Socket -> Process
+  - 서버와 마찬가지로 Socket은 File I/O Buffer, TCP는 TCP Buffer를 갖고 있음
+  - NIC에 도착하면 frame에서 packet을 가져와서 IP에 전달
+  - TCP에서 packet -> segment,
+  - TCP buffer에 쌓아놓는데 window size만큼 받은 후 packet 잘받았다는 ACK(acknowledgement)를 보냄 => 속도지연 발생
+  - 수신 측의 window size가 보내려는 데이터 크기보다 크면 나머지 전부 보냄, 아니면 window size만큼만 다시 보내고 대기
+  - TCP Buffer -> File I/O Buffer로 올리는 Read 속도가 네트워크 속도보다 빨라야 함
+  - Read 속도로 인한 처리 지연 문제 => 네트워크 보다 프로그램 구현이 더 중요
+  - TCP에서는 송신 보다 수신에서 문제 있는 경우가 많다
+
 ## [TCP 연결이라는 착각에 대해](https://www.youtube.com/watch?v=DC9FfKSgisg&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=26)
 
 ## [TCP 연결, LAN선 뽑기 그리고 게임해킹!](https://www.youtube.com/watch?v=mP_C2QJEYts&list=PLXvgR_grOs1BFH-TuqFsfHqbh-gpMbFoy&index=27)
